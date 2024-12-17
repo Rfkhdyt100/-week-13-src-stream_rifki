@@ -21,3 +21,11 @@ Kata kunci yield* digunakan untuk menghasilkan nilai dari stream Stream.periodic
 
 ### Soal 4
 ![GIF_image](asset/gif-01.gif)
+
+### Soal 5
+1. Jelaskan perbedaan menggunakan listen dan await for
+
+listen menggunakan callback untuk menangani data yang diterima, sedangkan await for menggunakan pendekatan yang lebih mirip dengan loop untuk menunggu dan menerima data.
+
+listen lebih cocok digunakan ketika Anda ingin menangani data secara reaktif dengan callback, sementara await for lebih cocok digunakan dalam fungsi asynchronous yang membutuhkan aliran data secara berurutan.
+

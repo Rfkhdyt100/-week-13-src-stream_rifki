@@ -38,12 +38,16 @@ class _StreamHomePageState extends State<StreamHomePage> {
     changeColor();
   }
 
-  void changeColor() async {
-    await for (var eventColor in colorStream.getColor()) {
+  // void changeColor() async {
+  //   await for (var eventColor in colorStream.getColor()) {
+  //     setState(() {
+  //       bgColor = eventColor;
+  void changeColor() {
+    colorStream.getColor().listen((eventColor) {
       setState(() {
         bgColor = eventColor;
       });
-    }
+    });
   }
 
   @override
