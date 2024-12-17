@@ -33,20 +33,27 @@ class _StreamHomePageState extends State<StreamHomePage> {
   Color bgColor = Colors.blueAccent;
   late ColorStream colorStream;
   int lastNumber = 0;
-  late StreamController numberStreamController;
+  late StreamController<int> numberStreamController;
   late NumberStream numberStream;
 
   @override
   void initState() {
+    super.initState();
     numberStream = NumberStream();
     numberStreamController = numberStream.controller;
-    Stream stream = numberStreamController.stream;
-    stream.listen((event) {
-      setState(() {
-        lastNumber = event;
-      });
-    });
-    super.initState();
+    Stream<int> stream = numberStreamController.stream;
+    stream.listen(
+      (event) {
+        setState(() {
+          lastNumber = event;
+        });
+      },
+      onError: (error) {
+        setState(() {
+          lastNumber = -1;
+        });
+      },
+    );
   }
 
   @override
@@ -59,12 +66,9 @@ class _StreamHomePageState extends State<StreamHomePage> {
     Random random = Random();
     int myNum = random.nextInt(10);
     numberStream.addNumberToSink(myNum);
+    // numberStream.addError();
   }
 
-  // void changeColor() async {
-  //   await for (var eventColor in colorStream.getColor()) {
-  //     setState(() {
-  //       bgColor = eventColor;
   void changeColor() {
     colorStream.getColor().listen((eventColor) {
       setState(() {

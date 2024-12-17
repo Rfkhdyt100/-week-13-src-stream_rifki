@@ -37,3 +37,10 @@ listen lebih cocok digunakan ketika Anda ingin menangani data secara reaktif den
 - method addRandomNumber() untuk menghasilkan angka acak dan menambahkannya ke stream.
 
 ![GIF_image](asset/gif-02.gif)
+
+### soal 7
+1. Jelaskan maksud kode langkah 13 sampai 15 tersebut!
+
+- digunakan untuk menambahkan method addError() ke dalam class NumberStream. Method ini digunakan untuk menambahkan error ke dalam stream.
+
+- digunakan untuk mengedit method addRandomNumber() dengan menambahkan komentar pada dua baris kode yang ada, dan menambahkan kode untuk memanggil method addError(), dan hasilnya akan menjadi minus.
