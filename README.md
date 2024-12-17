@@ -1,16 +1,16 @@
 # stream_rifki
 
-A new Flutter project.
+Nama: Rifki Hidayat
+kelas: 2D TRPL
+Nim: 2097
 
-## Getting Started
+## Penjelasan/Soal
 
-This project is a starting point for a Flutter application.
+### Soal 3
+1. Jelaskan fungsi keyword yield* pada kode tersebut!
+yield* dalam Dart digunakan untuk mendelegasikan penghasilan nilai ke fungsi generator atau stream lain. 
+Dalam kode Anda, yield* digunakan untuk menghasilkan nilai dari stream yang dibuat oleh Stream.periodic.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. Apa maksud isi perintah kode tersebut?
+metode getColor membuat stream yang mengeluarkan warna dari daftar colors setiap detik, berputar melalui daftar berulang kali. 
+Kata kunci yield* digunakan untuk menghasilkan nilai dari stream Stream.periodic.
