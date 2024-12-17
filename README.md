@@ -29,3 +29,11 @@ listen menggunakan callback untuk menangani data yang diterima, sedangkan await 
 
 listen lebih cocok digunakan ketika Anda ingin menangani data secara reaktif dengan callback, sementara await for lebih cocok digunakan dalam fungsi asynchronous yang membutuhkan aliran data secara berurutan.
 
+### Soal 6
+1. Jelaskan maksud kode langkah 8 dan 10 tersebut!
+
+- method initState() untuk menginisialisasi NumberStream dan mendengarkan stream yang dihasilkannya.
+
+- method addRandomNumber() untuk menghasilkan angka acak dan menambahkannya ke stream.
+
+![GIF_image](asset/gif-02.gif)
